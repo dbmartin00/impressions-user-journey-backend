@@ -1,0 +1,17 @@
+{
+  "name": "impressions-user-journey",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-athena": "^3.840.0",
+    "aws-sdk": "^2.1692.0"
+  }
+}
