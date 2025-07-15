@@ -21,6 +21,7 @@ export const handler = async (event) => {
         key,
         splitname,
         treatment,
+        environmentId,
         date_format(from_unixtime(timestamp / 1000), '%Y-%m-%d %H:%i:%s') AS utc,
         date_trunc('day', from_unixtime(timestamp / 1000)) AS day_bucket,
         ROW_NUMBER() OVER (
@@ -37,6 +38,7 @@ export const handler = async (event) => {
       key,
       splitname,
       treatment,
+      environmentId,
       utc
     FROM 
       ranked
